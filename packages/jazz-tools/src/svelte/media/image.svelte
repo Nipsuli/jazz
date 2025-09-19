@@ -73,7 +73,7 @@
     if (image === undefined)
       return (
         customPlaceholder ??
-        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="
+        "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
       ); // a single transparent pixel as a fallback
 
     const bestImage = highestResAvailable(

@@ -148,13 +148,11 @@ export const Image = forwardRef<HTMLImageElement, ImageProps>(function Image(
       return lazyPlaceholder;
     }
 
-    if (imageId === "co_zMTubMby3QiKDYnW9e2BEXW7Xaq") console.log("run", image);
-
     if (image === null) return undefined;
     if (image === undefined)
       return (
         props?.customPlaceholder ??
-        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="
+        "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
       ); // a single transparent pixel as a fallback
 
     const bestImage = highestResAvailable(

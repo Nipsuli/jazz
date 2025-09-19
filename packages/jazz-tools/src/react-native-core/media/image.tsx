@@ -77,7 +77,9 @@ export const Image = forwardRef<RNImage, ImageProps>(function Image(
 ) {
   const image = useCoState(ImageDefinition, imageId);
   const [src, setSrc] = useState<string | undefined>(
-    customPlaceholder ?? image?.placeholderDataURL,
+    customPlaceholder ??
+      image?.placeholderDataURL ??
+      "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
   );
 
   const dimensions: { width: number | undefined; height: number | undefined } =
